@@ -1,0 +1,36 @@
+@use "presets" as *;
+@use "mixins" as *;
+
+.navbar-inverse {
+  background-color: $color-deep-dark;
+
+  .navbar-nav > {
+    & li > a {
+      transition: background-color 0.5s;
+      border-radius: 4px;
+
+      &:focus,
+      &:hover {
+        background-color: $color-primary;
+      }
+    }
+
+    & .active > a {
+      background-color: $color-primary-dark;
+
+      &:focus,
+      &:hover {
+        color: #fff;
+        background-color: $color-primary-light;
+      }
+    }
+  }
+}
+
+.navbar-left > li {
+  margin: 5px 5px 5px 0;
+}
+
+.navbar-right > li {
+  margin: 5px 0 5px 5px;
+}

@@ -1,4 +1,4 @@
-@use "../presets/skin";
+@use "../presets/skin" as *;
 
 @mixin text-shortener {
   display: block;

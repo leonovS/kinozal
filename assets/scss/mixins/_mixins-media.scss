@@ -1,4 +1,4 @@
-@use "../presets/variables";
+@use "../presets/variables" as *;
 
 @mixin lg {
   @media (max-width: $lg - 0.2) {
