@@ -107,12 +107,18 @@ a:hover, a:focus {
   margin-bottom: 80px;
 }
 
+.vertical-slider {
+  border-radius: 4px;
+  overflow: hidden;
+}
+.vertical-slider__image {
+  width: 100%;
+}
 @media (min-width: 576px) {
   .header-logo__title {
     font-size: 3.5rem;
   }
 }
-
 @media (min-width: 768px) {
   .navbar-inverse .navbar-nav > li > a {
     border-radius: 4px;
@@ -130,13 +136,11 @@ a:hover, a:focus {
     margin: 5px 0 5px 5px;
   }
 }
-
 @media (max-width: 767.8px) {
   .navbar-inverse .navbar-nav > li > a {
     text-align: center;
   }
 }
-
 @media (max-width: 575.8px) {
   .header-logo__title {
     font-size: 2.5rem;
