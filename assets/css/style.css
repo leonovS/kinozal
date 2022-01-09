@@ -9,7 +9,6 @@
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s;
-  border-radius: 4px;
 }
 .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
   background-color: #165690;
@@ -22,12 +21,13 @@
   background-color: #517ba2;
 }
 
-.navbar-left > li {
-  margin: 5px 5px 5px 0;
+.navbar-header {
+  text-align: center;
 }
 
-.navbar-right > li {
-  margin: 5px 0 5px 5px;
+.navbar-toggle {
+  float: none;
+  margin-right: 0;
 }
 
 html {
@@ -72,5 +72,32 @@ a:hover, a:focus {
 @media (min-width: 576px) {
   .header-logo__title {
     font-size: 3.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-inverse .navbar-nav > li > a {
+    border-radius: 4px;
+  }
+  .navbar-left {
+    margin-bottom: 0;
+  }
+  .navbar-left > li {
+    margin: 5px 5px 5px 0;
+  }
+  .navbar-right {
+    margin-top: 0;
+  }
+  .navbar-right > li {
+    margin: 5px 0 5px 5px;
+  }
+}
+@media (max-width: 767.8px) {
+  .navbar-inverse .navbar-nav > li > a {
+    text-align: center;
+  }
+}
+@media (max-width: 575.8px) {
+  .header-logo__title {
+    font-size: 2.5rem;
   }
 }
