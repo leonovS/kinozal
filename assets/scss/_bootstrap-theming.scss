@@ -60,13 +60,17 @@
   margin-right: 0;
 }
 
+.panel {
+  margin-bottom: $gap * 2;
+}
+
 .panel-info {
   background-color: $color-gray-light;
   border: none;
   box-shadow: none;
 
   &:not:last-of-type {
-    margin-bottom: $gap * 2;
+    margin-bottom: ($gap * 2);
   }
 
   &:last-of-type {
@@ -85,4 +89,8 @@
 .panel-body {
   border: 1px solid $color-gray;
   border-radius: 0 0 4px 4px;
+}
+
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
 }

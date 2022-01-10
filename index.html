@@ -112,14 +112,37 @@
         <div class="site-search panel panel-info">
           <div class="panel-heading">Поиск</div>
           <div class="panel-body">
-            PanelContent
+            <form action="search">
+              <div class="input-group input-group-lg">
+                <input class="form-control" placeholder="Поиск по сайту" type="text">
+                <span class="input-group-btn">
+                  <button class="btn btn-default">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
           </div>
         </div>
 
         <div class="user-login panel panel-info">
           <div class="panel-heading">Пользователь</div>
           <div class="panel-body">
-            PanelContent
+            <form action="login">
+
+              <div class="form-group">
+                <input class="form-control" placeholder="логин" type="text">
+              </div>
+
+              <div class="form-group">
+                <input class="form-control" placeholder="пароль" type="password">
+              </div>
+
+              <div class="form-group">
+                <button class="btn btn-default btn-block">Вход</button>
+              </div>
+
+            </form>
           </div>
         </div>
 
