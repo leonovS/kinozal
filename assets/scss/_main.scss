@@ -11,12 +11,57 @@
   }
 }
 
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "PT Serif", serif;
+  margin: -9.99999999px 0 1em 0;
+
+  &::after {
+    position: absolute;
+    width: 100%;
+    margin: 0.85em 0 0 15px;
+    content: "";
+    border-bottom: 3px solid $color-accent-light;
+  }
+}
+
+h2 {
+  font-family: "PT Serif", serif;
+  margin: 60px 0 45px 45px;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    margin: 0.25em 0 0 0;
+    content: "";
+    border-bottom: 3px solid #f0ad4f;
+  }
+
+  &::after {
+    position: absolute;
+    width: 100%;
+    margin: 0.85em 0 0 15px;
+    content: "";
+    border-bottom: 3px solid $color-accent-light;
+  }
+}
+
 .new-films {
   &-row {
     margin-right: -$gap-sm;
     margin-bottom: -$gap;
     margin-left: -$gap-sm;
   }
+
+  &-title {
+    font-size: 3rem;
+  }
+
   &-item {
     margin-bottom: $gap;
     padding-right: $gap-sm;
@@ -32,6 +77,101 @@
 
     &__title {
       @include text-shortener;
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    &__caption {
+      text-align: center;
+      padding: 9px;
+    }
+
+    &:hover {
+      .thumbnail {
+        background-color: $color-accent !important;
+      }
+
+      h3 {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.top-week {
+  &-row {
+    margin-right: -$gap-sm;
+    margin-bottom: -$gap;
+    margin-left: -$gap-sm;
+  }
+
+  &-title {
+    font-size: 2.5rem;
+  }
+
+  &-item {
+    margin-bottom: $gap;
+    padding-right: $gap-sm;
+    padding-left: $gap-sm;
+
+    &__thumbnail {
+      margin-bottom: 0;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__title {
+      @include text-shortener;
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    &__caption {
+      text-align: center;
+      padding: 9px;
+    }
+
+    &:hover {
+      .thumbnail {
+        background-color: $color-accent !important;
+      }
+
+      h3 {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.film-news {
+  &-title {
+    font-size: 2.5rem;
+  }
+
+  &-item {
+    &:hover,
+    &:focus {
+      .thumbnail {
+        background-color: $color-accent;
+      }
+
+      .btn {
+        background-color: $color-accent;
+        color: $color-white;
+      }
+    }
+
+    &__text {
+      text-align: justify;
+    }
+
+    &__button {
+      float: right;
+      margin-bottom: 30px;
     }
   }
 }
