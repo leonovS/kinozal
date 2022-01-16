@@ -3,4 +3,35 @@
 
 .main {
   margin-bottom: $gap-xl;
+  .site-search {
+    margin-bottom: $gap * 3;
+  }
+  .user-login {
+    margin-bottom: $gap * 4;
+  }
+}
+
+.new-films {
+  &-row {
+    margin-right: -$gap-sm;
+    margin-bottom: -$gap;
+    margin-left: -$gap-sm;
+  }
+  &-item {
+    margin-bottom: $gap;
+    padding-right: $gap-sm;
+    padding-left: $gap-sm;
+
+    &__thumbnail {
+      margin-bottom: 0;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__title {
+      @include text-shortener;
+    }
+  }
 }

@@ -103,7 +103,7 @@ a:hover, a:focus {
   display: block;
   font-family: "PT Serif", serif;
   letter-spacing: 0.33em;
-  margin-right: -0.33em;
+  padding-left: 0.33em;
   color: #df8a13;
 }
 .header-logo__description {
@@ -115,6 +115,36 @@ a:hover, a:focus {
 
 .main {
   margin-bottom: 80px;
+}
+.main .site-search {
+  margin-bottom: 45px;
+}
+.main .user-login {
+  margin-bottom: 60px;
+}
+
+.new-films-row {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+  margin-bottom: -15px;
+}
+.new-films-item {
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+  margin-bottom: 15px;
+}
+.new-films-item__thumbnail {
+  margin-bottom: 0;
+}
+.new-films-item__image {
+  width: 100%;
+}
+.new-films-item__title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .left-sidebar {

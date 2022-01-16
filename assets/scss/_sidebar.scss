@@ -6,8 +6,9 @@
 }
 
 .vertical-slider {
-  border-radius: 4px;
   overflow: hidden;
+
+  border-radius: 4px;
 
   &__image {
     width: 100%;
@@ -20,13 +21,15 @@
     position: absolute;
     top: 0;
     right: $gap-md;
+
     border: none;
 
     a {
       padding: 14px 5px 12px !important;
+
       color: $color-gray;
-      background-color: transparent !important;
       border: none !important;
+      background-color: transparent !important;
     }
 
     .active > a {
@@ -48,12 +51,14 @@ $image-size-with-padding: ($image-size + $gap-md);
       position: absolute;
       right: 0;
       bottom: 0;
+
       width: calc(100% - $image-size-with-padding);
       height: 1px;
-      background-color: $color-gray;
       margin-bottom: -4px;
 
       content: "";
+
+      background-color: $color-gray;
     }
   }
 
@@ -68,8 +73,9 @@ $image-size-with-padding: ($image-size + $gap-md);
 
   &__thumbnail {
     float: left;
-    margin: 0 $gap-md $gap-md 0;
+
     width: $image-size;
+    margin: 0 $gap-md $gap-md 0;
   }
 
   &__image {
@@ -82,18 +88,21 @@ $image-size-with-padding: ($image-size + $gap-md);
 
   &__link {
     transition: color 0.25s;
+
     @include block-shortener($fz: 1rem, $lh: 1.5, $h: 50px, $l: 2);
   }
   &__date {
-    font-size: 0.8rem;
     text-align: right;
+
     color: $color-gray-dark;
+
+    font-size: 0.8rem;
   }
 }
 .top-films {
   &__body {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   &__list {
@@ -101,11 +110,12 @@ $image-size-with-padding: ($image-size + $gap-md);
   }
 
   &__item {
-    margin-left: -1px;
     margin-right: -1px;
-    background-color: transparent;
-    color: $color-primary !important;
+    margin-left: -1px;
     padding-right: 55px;
+
+    color: $color-primary !important;
+    background-color: transparent;
 
     &:first-child {
       border-top: none;
@@ -118,9 +128,9 @@ $image-size-with-padding: ($image-size + $gap-md);
 
     &:hover,
     &:focus {
-      background-color: $color-accent !important;
       color: $color-white !important;
       border-color: $color-accent;
+      background-color: $color-accent !important;
 
       .badge {
         background-color: $color-dark;
@@ -132,6 +142,7 @@ $image-size-with-padding: ($image-size + $gap-md);
     position: absolute;
     top: 50%;
     right: $gap;
+
     transform: translateY(-50%);
   }
 }
