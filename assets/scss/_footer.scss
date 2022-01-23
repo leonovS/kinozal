@@ -1,2 +1,50 @@
 @use "presets" as *;
 @use "mixins" as *;
+
+.footer {
+}
+.container-fluid {
+  width: 100%;
+  background-color: $color-dark;
+  padding-top: 45px;
+}
+.row {
+}
+.container {
+}
+.footer-top {
+  ul {
+    padding-left: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    color: $color-gray-dark;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-gray-light;
+    }
+  }
+}
+.footer-first {
+}
+.col-md-3 {
+}
+.col {
+}
+.col-xs-6 {
+}
+.footer-bottom {
+}
+.footer-fifth {
+  margin: 20px 0;
+  text-align: center;
+  a {
+    color: $color-gray;
+  }
+}
+.col-xs-12 {
+}
