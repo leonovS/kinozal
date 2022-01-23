@@ -13,40 +13,52 @@
 
 section {
   position: relative;
+
   overflow: hidden;
 }
 
 h1 {
-  font-family: "PT Serif", serif;
   margin: -9.99999999px 0 1em 0;
+
+  font-family: "PT Serif", serif;
 
   &::after {
     position: absolute;
+
     width: 100%;
     margin: 0.85em 0 0 15px;
+
     content: "";
+
     border-bottom: 3px solid $color-accent-light;
   }
 }
 
 h2 {
-  font-family: "PT Serif", serif;
   margin: 60px 0 45px 45px;
+
+  font-family: "PT Serif", serif;
 
   &::before {
     position: absolute;
     left: 0;
+
     width: 30px;
     margin: 0.25em 0 0 0;
+
     content: "";
+
     border-bottom: 3px solid #f0ad4f;
   }
 
   &::after {
     position: absolute;
+
     width: 100%;
     margin: 0.85em 0 0 15px;
+
     content: "";
+
     border-bottom: 3px solid $color-accent-light;
   }
 }
@@ -76,15 +88,18 @@ h2 {
     }
 
     &__title {
-      @include text-shortener;
+      margin: 0;
+
       font-size: 1rem;
       font-weight: bold;
-      margin: 0;
+
+      @include text-shortener;
     }
 
     &__caption {
-      text-align: center;
       padding: 9px;
+
+      text-align: center;
     }
 
     &:hover {
@@ -124,15 +139,18 @@ h2 {
     }
 
     &__title {
-      @include text-shortener;
+      margin: 0;
+
       font-size: 1rem;
       font-weight: bold;
-      margin: 0;
+
+      @include text-shortener;
     }
 
     &__caption {
-      text-align: center;
       padding: 9px;
+
+      text-align: center;
     }
 
     &:hover {
@@ -160,8 +178,8 @@ h2 {
       }
 
       .btn {
-        background-color: $color-accent;
         color: $color-white;
+        background-color: $color-accent;
       }
 
       a {
@@ -175,6 +193,7 @@ h2 {
 
     &__button {
       float: right;
+
       margin-bottom: 30px;
     }
   }
