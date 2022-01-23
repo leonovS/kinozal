@@ -479,6 +479,11 @@ h2 {
     margin: 5px 0 5px 5px;
   }
 }
+@media (max-width: 991.8px) {
+  .film-comment-form__button:focus {
+    outline-color: #df8a13 !important;
+  }
+}
 @media (max-width: 767.8px) {
   .navbar-inverse .navbar-nav > li > a {
     text-align: center;

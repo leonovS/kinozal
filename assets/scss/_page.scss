@@ -47,4 +47,10 @@ h2 {
 
 .film-comment-form__button {
   float: right;
+
+  &:focus {
+    @include md {
+      outline-color: $color-accent !important;
+    }
+  }
 }
