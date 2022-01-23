@@ -105,3 +105,8 @@
   transition: 0.25s;
   margin-bottom: 0;
 }
+
+.well {
+  border-color: $color-gray;
+  background-color: $color-gray-light;
+}
