@@ -171,6 +171,10 @@ h2 {
   }
 
   &-item {
+    &__image {
+      width: 100%;
+    }
+
     &:hover,
     &:focus {
       .thumbnail {
